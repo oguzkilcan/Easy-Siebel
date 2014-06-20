@@ -1,0 +1,37 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+name: Easy Siebel
+scopeName: source.siebel
+fileTypes: [siebel]
+uuid: 06858447-018d-4560-a2ef-819d206ba054
+
+patterns:
+- name: keyword.control.siebel
+  match: (?i:\b(IIF|BCHasRows)\b)
+
+- name: keyword.operator.siebel
+  match: =|>=|<|>|<|<>|\+|-|\*|\^|&|\b(?i:(AND|OR|IS|NOT|NULL)\b)
+
+- name: constant.function.siebel
+  match: (?i:\b(LookupValue|LookupName|FieldValue)\b)
+
+- name: support.bracket.round.siebel
+  begin: \[
+  beginCaptures:
+    '0': {name: punctuation.definition.variable.begin}
+  end: \]
+  endCaptures:
+    '0': {name: punctuation.definition.variable.end}
+
+- name: string.quoted.double.siebel
+  begin: '"'
+  beginCaptures:
+    '0': {name: punctuation.definition.string.begin}
+  end: '"'
+  endCaptures:
+    '0': {name: punctuation.definition.string.end}
+
+- name: markup.bold.round.bracket.begin
+  match: \(
+
+- name: markup.bold.round.bracket.begin
+  match: \)
