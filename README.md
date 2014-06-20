@@ -10,7 +10,7 @@ Provides syntax highlighting for the Siebel Expressions (`.siebel` files).
 
 **With Git:** Clone the repository in your Sublime Text "Packages" directory:
 
-    git clone git://github.com/ouzklcn/easy-siebel.git AMPL
+    git clone github.com:ouzklcn/Easy-Siebel.git Easy Siebel
 
 The "Packages" directory is located at:
 
